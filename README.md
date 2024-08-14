@@ -18,7 +18,7 @@ Ajoutez y les classes suivantes :
 
 Chacune de ces classes doit avoir les attributs et les méthodes nécessaires pour calculer sa propre surface.
 
-``` Mermaid
+```mermaid
 classDiagram
     note for Forme "La méthode calculSurface() de cette classe doit retourner 'Double.NaN'"
     Forme <|-- Triangle
@@ -70,7 +70,7 @@ classDiagram
 Créez ensuite une classe `Application` possédant une méthode `main` respectant les diagrammes de séquences suivants:
 
 ### Méthode main(String[] args)
-```Mermaid
+```mermaid
 sequenceDiagram
     create participant Application
     main->>Application: <<Creation>>
@@ -82,7 +82,7 @@ sequenceDiagram
 
 ### Méthode calculerSurfaces()
 
-```Mermaid
+```mermaid
 sequenceDiagram
     create participant laSurfaceTotale
     Application->>+laSurfaceTotale: 0.0
@@ -106,7 +106,7 @@ sequenceDiagram
 
 ### Méthode genererFormes()
 
-```Mermaid
+```mermaid
 sequenceDiagram
     create participant carre1
     Application->>carre1: cote = 1
