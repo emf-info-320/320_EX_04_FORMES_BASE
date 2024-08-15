@@ -3,8 +3,8 @@
 ## Durée : 45'
 
 ## Objectifs
-Réactivation des fondamentaux Java : classes et objets.
-Mise en pratique de l'héritage.
+- Réactivation des fondamentaux Java : classes et objets.
+- Mise en pratique de l'héritage.
 
 ## Travail à réaliser
 
