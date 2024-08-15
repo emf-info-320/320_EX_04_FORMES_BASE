@@ -96,7 +96,7 @@ sequenceDiagram
                 Application ->>+ uneForme: calculeSurface() = laSurface
                 uneForme -->>- Application:
 
-                Application ->>+ Application: laSurfaceTotale = laSurfaceTotale + laSurface
+                Application ->>+ Application: 'laSurfaceTotale = laSurfaceTotale + laSurface'
 
                 Application ->>+ uneForme: getNom()
                 uneForme -->>- Application: 
