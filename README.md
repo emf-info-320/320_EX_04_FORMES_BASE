@@ -4,6 +4,7 @@
 
 ## Objectifs
 Réactivation des fondamentaux Java : classes et objets.
+Mise en pratique de l'héritage.
 
 ## Travail à réaliser
 
@@ -30,13 +31,13 @@ classDiagram
         + MAX_FORME : int = 8
         + Application()
         + genererFormes() void
-        + claculerSurfaces() void
+        + calculerSurfaces() void
         + main(String[] args)$ void
     }
     class Forme{
         - nom : String
         + Forme(String nom) 
-        + calculSurface() double
+        + calculeSurface() double
         + getNom() String
     }
     
@@ -44,26 +45,26 @@ classDiagram
         - base : int
         - hauteur : int
         + Triangle(String nom, int base, int hauteur)
-        + calculSurface() double
+        + calculeSurface() double
     }
 
     class Disque{
         - rayon : int
         + Disque(String nom, int rayon)
-        + calculSurface() double
+        + calculeSurface() double
     }
 
     class Carre{
         - cote : int
         + Carre(String nom, int cote)
-        + calculSurface() double
+        + calculeSurface() double
     }
 
     class Rectangle{
         - largeur : int
         - longueur : int
         + Rectangle(String nom, int largeur, int longueur)
-        + calculSurface() double
+        + calculeSurface() double
     }
 
 ```
@@ -85,9 +86,9 @@ sequenceDiagram
 ```mermaid
 sequenceDiagram
     create participant laSurfaceTotale
-    Application->>+laSurfaceTotale: 0.0
+    Application->>+laSurfaceTotale: double 0.0
     create participant laSurface
-    Application->>+laSurface: 0.0
+    Application->>+laSurface: double 0.0
     alt lesFormes != null
         loop i < lesFormes.length
             Application ->>+ Application: uneForme = lesFormes[i]
