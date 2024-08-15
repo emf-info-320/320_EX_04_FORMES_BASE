@@ -85,8 +85,8 @@ sequenceDiagram
 
 ```mermaid
 sequenceDiagram
-    create participant laSurfaceTotale
-    Application->>+laSurfaceTotale: double 0.0
+    create participant "double laSurfaceTotale"
+    Application->>+"double laSurfaceTotale": 0.0
     create participant laSurface
     Application->>+laSurface: double 0.0
     alt lesFormes != null
