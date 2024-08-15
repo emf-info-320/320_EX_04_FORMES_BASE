@@ -84,28 +84,28 @@ sequenceDiagram
 ### Méthode calculerSurfaces()
 
 ```mermaid
+
 sequenceDiagram
     create participant double laSurfaceTotale
-    Application->>+double laSurfaceTotale: 0.0
-    create participant double laSurface
-    Application->>+double laSurface: 0.0
+    calculerSurfaces()->>+ double laSurfaceTotale: 0.0
     alt lesFormes != null
         loop i < lesFormes.length
-            Application ->>+ Application: uneForme = lesFormes[i]
+            calculerSurfaces() ->>+ calculerSurfaces(): uneForme = lesFormes[i]
             alt uneForme != null
-                Application ->>+ uneForme: calculeSurface()
-                uneForme -->>- Application:
+                calculerSurfaces() ->>+ uneForme: calculeSurface()
+                uneForme -->>- calculerSurfaces():  double laSurface
 
-                Application ->>+ Application: 'laSurfaceTotale = laSurfaceTotale + laSurface'
+                calculerSurfaces() ->>+ calculerSurfaces(): laSurfaceTotale += laSurface
 
-                Application ->>+ uneForme: getNom()
-                uneForme -->>- Application: 
-                Application ->>+ Application: SOUT(type de forme et sa surface)
+                calculerSurfaces() ->>+ uneForme: getNom()
+                uneForme -->>- calculerSurfaces(): 
+                calculerSurfaces() ->>+ calculerSurfaces(): SOUT(type de forme et sa surface)
             end
         end
     end
 
-    Application ->>+ Application: SOUT(laSurfaceTotale)
+    calculerSurfaces() ->>+ calculerSurfaces(): SOUT(laSurfaceTotale)
+
 ```
 
 ### Méthode genererFormes()
