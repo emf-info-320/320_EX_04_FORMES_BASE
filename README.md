@@ -87,14 +87,17 @@ sequenceDiagram
 sequenceDiagram
     create participant double laSurfaceTotale
     Application->>+double laSurfaceTotale: 0.0
-    create participant laSurface
-    Application->>+laSurface: double 0.0
+    create participant double laSurface
+    Application->>+double laSurface: 0.0
     alt lesFormes != null
         loop i < lesFormes.length
             Application ->>+ Application: uneForme = lesFormes[i]
             alt uneForme != null
-                Application ->>+ uneForme: calculeSurface()
-                uneForme -->>- Application: 
+                Application ->>+ uneForme: calculeSurface() = laSurface
+                uneForme -->>- Application:
+
+                Application ->>+ Application: laSurfaceTotale = laSurfaceTotale + laSurface
+
                 Application ->>+ uneForme: getNom()
                 uneForme -->>- Application: 
                 Application ->>+ Application: SOUT(type de forme et sa surface)
