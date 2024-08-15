@@ -93,7 +93,7 @@ sequenceDiagram
         loop i < lesFormes.length
             Application ->>+ Application: uneForme = lesFormes[i]
             alt uneForme != null
-                Application ->>+ uneForme: calculeSurface() = laSurface
+                Application ->>+ uneForme: calculeSurface()
                 uneForme -->>- Application:
 
                 Application ->>+ Application: 'laSurfaceTotale = laSurfaceTotale + laSurface'
