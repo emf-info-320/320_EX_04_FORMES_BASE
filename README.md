@@ -131,12 +131,12 @@ sequenceDiagram
 
 ```
 ## Résultat attendu
-> La surface de ce [Carré] qui a [4] côtés est de [1.0]</br>
-> La surface de ce [Rectangle] qui a [4] côtés est de [6.0]</br>
-> La surface de ce [Triangle] qui a [3] côtés est de [10.0]</br>
-> La surface de ce [Disque] qui a [infinité] côtés est de [113.09733552923255]</br>
-> La surface de ce [Carré] qui a [4] côtés est de [49.0]</br>
-> La surface de ce [Rectangle] qui a [4] côtés est de [72.0]</br>
-> La surface de ce [Triangle] qui a [3] côtés est de [55.0]</br>
-> La surface de ce [Disque] qui a [infinité] côtés est de [452.3893421169302]</br>
+> La surface de la forme 0 qui est un Carré est de [1.0]</br>
+> La surface de la forme 1 qui est un Rectangle est de [6.0]</br>
+> La surface de la forme 2 qui est un Triangle est de [10.0]</br>
+> La surface de la forme 3 qui est un Disque est de [113.09733552923255]</br>
+> La surface de la forme 4 qui est un Carré est de [49.0]</br>
+> La surface de la forme 5 qui est un Rectangle est de [72.0]</br>
+> La surface de la forme 6 qui est un Triangle est de [55.0]</br>
+> La surface de la forme 7 qui est un Disque est de [452.3893421169302]</br>
 > La surface totale des formes est de 758.4866776461628
