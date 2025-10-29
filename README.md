@@ -21,7 +21,7 @@ Chacune de ces classes doit avoir les attributs et les méthodes nécessaires po
 
 ```mermaid
 classDiagram
-    note for Forme "La méthode calculSurface() de cette classe doit retourner 'Double.NaN'"
+    note for Forme "La méthode calculeSurface() de cette classe doit retourner 'Double.NaN'"
     Forme <|-- Triangle
     Forme <|-- Disque
     Forme <|-- Carre
